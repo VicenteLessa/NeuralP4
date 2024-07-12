@@ -1,0 +1,18 @@
+Instalação Tensorflow
+1 - Abrir um cmd no conda navigator no ambiente base (root)
+	1.1 - conda create -n tf_env python=3.8
+	1.2 - conda activate tf_env
+	
+2 - Entrar/Selecionar o ambiente virtual tf_env. Portanto, no tf_env, abrir um cmd e executar
+	2.1 - pip install tf-nightly
+		  pip install pandas
+		  pip install numpy
+
+
+Para executar no dia-a-dia:
+1-Entrar no ambiente virtual tf_env
+2-Abrir CMD e executar:
+
+jupyter notebook --notebook-dir C:\NN-P4\python-notebooks
+
+3-abrir notebbok http://localhost:8890/tree?.......

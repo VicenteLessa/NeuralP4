@@ -1,0 +1,1 @@
+{"datetime": "12-07-2024-16-30-41", "number_of_attributes": 16, "hidden_layer_nodes": 32, "output_layer_nodes": 3, "accuracy_test": 0.8833333253860474, "batch_size": 512, "epochs": 500}
