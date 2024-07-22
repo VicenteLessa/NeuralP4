@@ -1,0 +1,129 @@
+{
+  "target": "bmv2",
+  "p4info": "build/ANN.p4.p4info.txt",
+  "bmv2_json": "build/ANN.json",
+  "table_entries": [
+    {
+      "table": "MyIngress.ann_forward",
+      "match": {
+        "standard_metadata.ingress_port": 1
+      },
+      "action_name": "MyIngress.mcast",
+      "action_params": {
+        "mgroup": 1
+      }
+    },
+    {
+      "table": "MyIngress.tab_neuron_id",
+      "default_action": true,
+      "action_name": "MyIngress.set_neuron_id",
+      "action_params": {
+        "neuron_id": 1
+      }
+    },
+    {
+      "table": "MyIngress.tab_n_expected_stimuli",
+      "default_action": true,
+      "action_name": "MyIngress.set_n_expected_stimuli",
+      "action_params": {
+        "n_expected_stimuli": 1
+      }
+    },
+    {
+      "table": "MyIngress.tab_expected_stimuli",
+      "default_action": true,
+      "action_name": "MyIngress.set_expected_stimuli",
+      "action_params": {
+        "expected_stimuli": 1
+      }
+    },
+    {
+      "table": "MyIngress.tab_agg_func",
+      "default_action": true,
+      "action_name": "MyIngress.set_agg_func",
+      "action_params": {
+        "agg_func": 5
+      }
+    },
+    {
+      "table": "MyIngress.tab_activation_func",
+      "default_action": true,
+      "action_name": "MyIngress.set_activation_func",
+      "action_params": {
+        "activation_func": 2
+      }
+    },
+    {
+      "table": "MyIngress.tab_norm_mean_std",
+      "default_action": true,
+      "action_name": "MyIngress.set_norm_mean_std",
+      "action_params": {
+        "neuron_1_mean": 4294958195,
+        "neuron_1_std": 169525,
+        "neuron_2_mean": 4294946122,
+        "neuron_2_std": 140136,
+        "neuron_3_mean": 4294952509,
+        "neuron_3_std": 156785,
+        "neuron_4_mean": 4294945882,
+        "neuron_4_std": 131112,
+        "neuron_5_mean": 14547,
+        "neuron_5_std": 97101,
+        "neuron_6_mean": 4294962718,
+        "neuron_6_std": 255988,
+        "neuron_7_mean": 4294955703,
+        "neuron_7_std": 156452,
+        "neuron_8_mean": 4294923194,
+        "neuron_8_std": 139695,
+        "neuron_9_mean": 4294950774,
+        "neuron_9_std": 140049,
+        "neuron_10_mean": 4294903607,
+        "neuron_10_std": 396094,
+        "neuron_11_mean": 4294916566,
+        "neuron_11_std": 156463,
+        "neuron_12_mean": 4294937039,
+        "neuron_12_std": 131457,
+        "neuron_13_mean": 4294907003,
+        "neuron_13_std": 240649,
+        "neuron_14_mean": 4294938645,
+        "neuron_14_std": 125927,
+        "neuron_15_mean": 4294947451,
+        "neuron_15_std": 142631,
+        "neuron_16_mean": 4294943944,
+        "neuron_16_std": 128719,
+        "neuron_17_mean": 23057,
+        "neuron_17_std": 130773,
+        "neuron_18_mean": 4294949389,
+        "neuron_18_std": 147065,
+        "neuron_19_mean": 4294919723,
+        "neuron_19_std": 138547,
+        "neuron_20_mean": 4294945291,
+        "neuron_20_std": 130321,
+        "neuron_21_mean": 4294962792,
+        "neuron_21_std": 219929,
+        "neuron_22_mean": 4294942097,
+        "neuron_22_std": 126811,
+        "neuron_23_mean": 4294929452,
+        "neuron_23_std": 125232,
+        "neuron_24_mean": 4294952528,
+        "neuron_24_std": 69030,
+        "neuron_25_mean": 4294942799,
+        "neuron_25_std": 128808,
+        "neuron_26_mean": 4294916068,
+        "neuron_26_std": 158642,
+        "neuron_27_mean": 4294915348,
+        "neuron_27_std": 161664
+      }
+    }
+  ],
+  "multicast_group_entries": [
+    {
+      "multicast_group_id": 1,
+      "replicas": [
+        {
+          "egress_port": 51,
+          "instance": 1
+        }
+      ]
+    }
+  ]
+}
