@@ -1,0 +1,183 @@
+{
+  "target": "bmv2",
+  "p4info": "build/ANN.p4.p4info.txt",
+  "bmv2_json": "build/ANN.json",
+  "table_entries": [
+    {
+      "table": "MyIngress.tab_neuron_id",
+      "default_action": true,
+      "action_name": "MyIngress.set_neuron_id",
+      "action_params": {
+        "neuron_id": 101
+      }
+    },
+    {
+      "table": "MyIngress.tab_n_expected_stimuli",
+      "default_action": true,
+      "action_name": "MyIngress.set_n_expected_stimuli",
+      "action_params": {
+        "n_expected_stimuli": 1
+      }
+    },
+    {
+      "table": "MyIngress.tab_expected_stimuli",
+      "default_action": true,
+      "action_name": "MyIngress.set_expected_stimuli",
+      "action_params": {
+        "expected_stimuli": 9671406554665233583964160
+      }
+    },
+    {
+      "table": "MyIngress.tab_agg_func",
+      "default_action": true,
+      "action_name": "MyIngress.set_agg_func",
+      "action_params": {
+        "agg_func": 6
+      }
+    },
+    {
+      "table": "MyIngress.tab_activation_func",
+      "default_action": true,
+      "action_name": "MyIngress.set_activation_func",
+      "action_params": {
+        "activation_func": 2
+      }
+    },
+    {
+      "table": "MyIngress.tab_neuron_bias_3_neurons",
+      "default_action": true,
+      "action_name": "MyIngress.set_neuron_bias_3_neurons",
+      "action_params": {
+        "neuron_1_bias": 4294956787,
+        "neuron_2_bias": 13606,
+        "neuron_3_bias": 5484
+      }
+    },
+    {
+      "table": "MyIngress.tab_n2n_weight_32_to_3_neurons",
+      "match": {
+        "hdr.ann.neuron_id": 51
+      },
+      "action_name": "MyIngress.set_n2n_weight_32_to_3_neurons",
+      "action_params": {
+        "n2n_1_weight_1": 7387,
+        "n2n_1_weight_2": 19568,
+        "n2n_1_weight_3": 4294918148,
+        "n2n_1_weight_4": 4294932354,
+        "n2n_1_weight_5": 4294960583,
+        "n2n_1_weight_6": 4294950643,
+        "n2n_1_weight_7": 4603,
+        "n2n_1_weight_8": 4294934016,
+        "n2n_1_weight_9": 4294960224,
+        "n2n_1_weight_10": 4294916860,
+        "n2n_1_weight_11": 4294960851,
+        "n2n_1_weight_12": 14941,
+        "n2n_1_weight_13": 26430,
+        "n2n_1_weight_14": 4294966867,
+        "n2n_1_weight_15": 4294927250,
+        "n2n_1_weight_16": 17588,
+        "n2n_1_weight_17": 4294961559,
+        "n2n_1_weight_18": 8765,
+        "n2n_1_weight_19": 10848,
+        "n2n_1_weight_20": 37301,
+        "n2n_1_weight_21": 25845,
+        "n2n_1_weight_22": 11571,
+        "n2n_1_weight_23": 4294925913,
+        "n2n_1_weight_24": 4294925810,
+        "n2n_1_weight_25": 26663,
+        "n2n_1_weight_26": 4294926264,
+        "n2n_1_weight_27": 4294932115,
+        "n2n_1_weight_28": 4294944230,
+        "n2n_1_weight_29": 4294922879,
+        "n2n_1_weight_30": 4294935298,
+        "n2n_1_weight_31": 4294931588,
+        "n2n_1_weight_32": 4294948124,
+        "n2n_2_weight_1": 4294900186,
+        "n2n_2_weight_2": 17134,
+        "n2n_2_weight_3": 47060,
+        "n2n_2_weight_4": 37434,
+        "n2n_2_weight_5": 4294923971,
+        "n2n_2_weight_6": 4294964444,
+        "n2n_2_weight_7": 28023,
+        "n2n_2_weight_8": 4294960521,
+        "n2n_2_weight_9": 4294936381,
+        "n2n_2_weight_10": 4294894547,
+        "n2n_2_weight_11": 4294927826,
+        "n2n_2_weight_12": 4294956763,
+        "n2n_2_weight_13": 13608,
+        "n2n_2_weight_14": 27928,
+        "n2n_2_weight_15": 4294946816,
+        "n2n_2_weight_16": 20582,
+        "n2n_2_weight_17": 4294902456,
+        "n2n_2_weight_18": 46061,
+        "n2n_2_weight_19": 4294953293,
+        "n2n_2_weight_20": 4294929875,
+        "n2n_2_weight_21": 4294960950,
+        "n2n_2_weight_22": 27697,
+        "n2n_2_weight_23": 4294948620,
+        "n2n_2_weight_24": 40877,
+        "n2n_2_weight_25": 4294932441,
+        "n2n_2_weight_26": 4294947400,
+        "n2n_2_weight_27": 49648,
+        "n2n_2_weight_28": 22124,
+        "n2n_2_weight_29": 30870,
+        "n2n_2_weight_30": 30093,
+        "n2n_2_weight_31": 4294941946,
+        "n2n_2_weight_32": 9147,
+        "n2n_3_weight_1": 4420,
+        "n2n_3_weight_2": 4294952516,
+        "n2n_3_weight_3": 4294951585,
+        "n2n_3_weight_4": 4294950076,
+        "n2n_3_weight_5": 26775,
+        "n2n_3_weight_6": 37818,
+        "n2n_3_weight_7": 4294960177,
+        "n2n_3_weight_8": 4294936778,
+        "n2n_3_weight_9": 41709,
+        "n2n_3_weight_10": 15131,
+        "n2n_3_weight_11": 12443,
+        "n2n_3_weight_12": 4294902431,
+        "n2n_3_weight_13": 4294906641,
+        "n2n_3_weight_14": 4294956173,
+        "n2n_3_weight_15": 26598,
+        "n2n_3_weight_16": 4294945329,
+        "n2n_3_weight_17": 10619,
+        "n2n_3_weight_18": 4294959331,
+        "n2n_3_weight_19": 4294955873,
+        "n2n_3_weight_20": 6098,
+        "n2n_3_weight_21": 6152,
+        "n2n_3_weight_22": 4294927949,
+        "n2n_3_weight_23": 12644,
+        "n2n_3_weight_24": 4294917554,
+        "n2n_3_weight_25": 16437,
+        "n2n_3_weight_26": 23557,
+        "n2n_3_weight_27": 4294938166,
+        "n2n_3_weight_28": 4294940350,
+        "n2n_3_weight_29": 21309,
+        "n2n_3_weight_30": 4294944464,
+        "n2n_3_weight_31": 25160,
+        "n2n_3_weight_32": 4294928321
+      }
+    },
+    {
+      "table": "MyIngress.ann_forward",
+      "match": {
+        "standard_metadata.ingress_port": 51
+      },
+      "action_name": "MyIngress.mcast",
+      "action_params": {
+        "mgroup": 101
+      }
+    }
+  ],
+  "multicast_group_entries": [
+    {
+      "multicast_group_id": 101,
+      "replicas": [
+        {
+          "egress_port": 126,
+          "instance": 1
+        }
+      ]
+    }
+  ]
+}
