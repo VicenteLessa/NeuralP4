@@ -13,7 +13,7 @@ from scapy.all import *
 
 # Creating the config dict in loco, maybe best would be to be in a file
 cfg = {
-    "input_dataset_filename": "csv-files-input/df-test-app-iden-27-attrs.csv",
+    "input_dataset_filename": "csv-files-input/df-test-app-iden.csv",
     "output_csv_filename": "csv-files-output/p4-out-app-iden-27x27x7-q16_16.csv",
     "input_switches": [
         {
@@ -37,8 +37,8 @@ cfg = {
         }
     ]
 }
-WORDSIZE = 16
-PRECISION = 8
+WORDSIZE = 32
+PRECISION = 16
 SLACK = 8
 
 

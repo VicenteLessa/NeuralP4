@@ -1,0 +1,216 @@
+{
+  "target": "bmv2",
+  "p4info": "build/ANN.p4.p4info.txt",
+  "bmv2_json": "build/ANN.json",
+  "table_entries": [
+    {
+      "table": "MyIngress.tab_neuron_id",
+      "default_action": true,
+      "action_name": "MyIngress.set_neuron_id",
+      "action_params": {
+        "neuron_id": 101
+      }
+    },
+    {
+      "table": "MyIngress.tab_n_expected_stimuli",
+      "default_action": true,
+      "action_name": "MyIngress.set_n_expected_stimuli",
+      "action_params": {
+        "n_expected_stimuli": 1
+      }
+    },
+    {
+      "table": "MyIngress.tab_expected_stimuli",
+      "default_action": true,
+      "action_name": "MyIngress.set_expected_stimuli",
+      "action_params": {
+        "expected_stimuli": 9671406554665233583964160
+      }
+    },
+    {
+      "table": "MyIngress.tab_agg_func",
+      "default_action": true,
+      "action_name": "MyIngress.set_agg_func",
+      "action_params": {
+        "agg_func": 6
+      }
+    },
+    {
+      "table": "MyIngress.tab_activation_func",
+      "default_action": true,
+      "action_name": "MyIngress.set_activation_func",
+      "action_params": {
+        "activation_func": 2
+      }
+    },
+    {
+      "table": "MyIngress.tab_neuron_bias_4_neurons",
+      "default_action": true,
+      "action_name": "MyIngress.set_neuron_bias_4_neurons",
+      "action_params": {
+        "neuron_1_bias": 65534,
+        "neuron_2_bias": 65530,
+        "neuron_3_bias": 65534,
+        "neuron_4_bias": 10
+      }
+    },
+    {
+      "table": "MyIngress.tab_n2n_weight_32_to_4_neurons",
+      "match": {
+        "hdr.ann.neuron_id": 51
+      },
+      "action_name": "MyIngress.set_n2n_weight_32_to_4_neurons",
+      "action_params": {
+        "n2n_1_weight_1": 65287,
+        "n2n_1_weight_2": 201,
+        "n2n_1_weight_3": 65425,
+        "n2n_1_weight_4": 65512,
+        "n2n_1_weight_5": 65158,
+        "n2n_1_weight_6": 65417,
+        "n2n_1_weight_7": 160,
+        "n2n_1_weight_8": 65237,
+        "n2n_1_weight_9": 235,
+        "n2n_1_weight_10": 193,
+        "n2n_1_weight_11": 65518,
+        "n2n_1_weight_12": 19,
+        "n2n_1_weight_13": 65348,
+        "n2n_1_weight_14": 65142,
+        "n2n_1_weight_15": 65300,
+        "n2n_1_weight_16": 65019,
+        "n2n_1_weight_17": 65195,
+        "n2n_1_weight_18": 324,
+        "n2n_1_weight_19": 75,
+        "n2n_1_weight_20": 65516,
+        "n2n_1_weight_21": 100,
+        "n2n_1_weight_22": 65388,
+        "n2n_1_weight_23": 65331,
+        "n2n_1_weight_24": 65427,
+        "n2n_1_weight_25": 124,
+        "n2n_1_weight_26": 254,
+        "n2n_1_weight_27": 65326,
+        "n2n_1_weight_28": 33,
+        "n2n_1_weight_29": 65216,
+        "n2n_1_weight_30": 47,
+        "n2n_1_weight_31": 65441,
+        "n2n_1_weight_32": 65373,
+        "n2n_2_weight_1": 65477,
+        "n2n_2_weight_2": 151,
+        "n2n_2_weight_3": 182,
+        "n2n_2_weight_4": 65477,
+        "n2n_2_weight_5": 65378,
+        "n2n_2_weight_6": 134,
+        "n2n_2_weight_7": 65337,
+        "n2n_2_weight_8": 173,
+        "n2n_2_weight_9": 93,
+        "n2n_2_weight_10": 65405,
+        "n2n_2_weight_11": 65412,
+        "n2n_2_weight_12": 65352,
+        "n2n_2_weight_13": 205,
+        "n2n_2_weight_14": 65534,
+        "n2n_2_weight_15": 257,
+        "n2n_2_weight_16": 188,
+        "n2n_2_weight_17": 130,
+        "n2n_2_weight_18": 133,
+        "n2n_2_weight_19": 65201,
+        "n2n_2_weight_20": 65063,
+        "n2n_2_weight_21": 60,
+        "n2n_2_weight_22": 206,
+        "n2n_2_weight_23": 65387,
+        "n2n_2_weight_24": 65493,
+        "n2n_2_weight_25": 65499,
+        "n2n_2_weight_26": 65320,
+        "n2n_2_weight_27": 18,
+        "n2n_2_weight_28": 217,
+        "n2n_2_weight_29": 219,
+        "n2n_2_weight_30": 65271,
+        "n2n_2_weight_31": 65253,
+        "n2n_2_weight_32": 212,
+        "n2n_3_weight_1": 142,
+        "n2n_3_weight_2": 65393,
+        "n2n_3_weight_3": 65297,
+        "n2n_3_weight_4": 310,
+        "n2n_3_weight_5": 65504,
+        "n2n_3_weight_6": 159,
+        "n2n_3_weight_7": 65297,
+        "n2n_3_weight_8": 65206,
+        "n2n_3_weight_9": 65406,
+        "n2n_3_weight_10": 65411,
+        "n2n_3_weight_11": 65413,
+        "n2n_3_weight_12": 182,
+        "n2n_3_weight_13": 102,
+        "n2n_3_weight_14": 65463,
+        "n2n_3_weight_15": 75,
+        "n2n_3_weight_16": 137,
+        "n2n_3_weight_17": 65514,
+        "n2n_3_weight_18": 65360,
+        "n2n_3_weight_19": 108,
+        "n2n_3_weight_20": 202,
+        "n2n_3_weight_21": 34,
+        "n2n_3_weight_22": 65497,
+        "n2n_3_weight_23": 184,
+        "n2n_3_weight_24": 65205,
+        "n2n_3_weight_25": 65232,
+        "n2n_3_weight_26": 65387,
+        "n2n_3_weight_27": 65321,
+        "n2n_3_weight_28": 65440,
+        "n2n_3_weight_29": 62,
+        "n2n_3_weight_30": 169,
+        "n2n_3_weight_31": 185,
+        "n2n_3_weight_32": 63,
+        "n2n_4_weight_1": 70,
+        "n2n_4_weight_2": 65451,
+        "n2n_4_weight_3": 119,
+        "n2n_4_weight_4": 65328,
+        "n2n_4_weight_5": 65,
+        "n2n_4_weight_6": 65428,
+        "n2n_4_weight_7": 158,
+        "n2n_4_weight_8": 95,
+        "n2n_4_weight_9": 65387,
+        "n2n_4_weight_10": 242,
+        "n2n_4_weight_11": 221,
+        "n2n_4_weight_12": 65413,
+        "n2n_4_weight_13": 65441,
+        "n2n_4_weight_14": 163,
+        "n2n_4_weight_15": 65351,
+        "n2n_4_weight_16": 65390,
+        "n2n_4_weight_17": 179,
+        "n2n_4_weight_18": 65469,
+        "n2n_4_weight_19": 212,
+        "n2n_4_weight_20": 229,
+        "n2n_4_weight_21": 65218,
+        "n2n_4_weight_22": 65488,
+        "n2n_4_weight_23": 125,
+        "n2n_4_weight_24": 283,
+        "n2n_4_weight_25": 308,
+        "n2n_4_weight_26": 150,
+        "n2n_4_weight_27": 80,
+        "n2n_4_weight_28": 65398,
+        "n2n_4_weight_29": 65506,
+        "n2n_4_weight_30": 65365,
+        "n2n_4_weight_31": 143,
+        "n2n_4_weight_32": 65369
+      }
+    },
+    {
+      "table": "MyIngress.ann_forward",
+      "match": {
+        "standard_metadata.ingress_port": 51
+      },
+      "action_name": "MyIngress.mcast",
+      "action_params": {
+        "mgroup": 101
+      }
+    }
+  ],
+  "multicast_group_entries": [
+    {
+      "multicast_group_id": 101,
+      "replicas": [
+        {
+          "egress_port": 126,
+          "instance": 1
+        }
+      ]
+    }
+  ]
+}

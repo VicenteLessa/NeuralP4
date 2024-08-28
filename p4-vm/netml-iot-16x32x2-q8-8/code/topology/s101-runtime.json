@@ -1,0 +1,150 @@
+{
+  "target": "bmv2",
+  "p4info": "build/ANN.p4.p4info.txt",
+  "bmv2_json": "build/ANN.json",
+  "table_entries": [
+    {
+      "table": "MyIngress.tab_neuron_id",
+      "default_action": true,
+      "action_name": "MyIngress.set_neuron_id",
+      "action_params": {
+        "neuron_id": 101
+      }
+    },
+    {
+      "table": "MyIngress.tab_n_expected_stimuli",
+      "default_action": true,
+      "action_name": "MyIngress.set_n_expected_stimuli",
+      "action_params": {
+        "n_expected_stimuli": 1
+      }
+    },
+    {
+      "table": "MyIngress.tab_expected_stimuli",
+      "default_action": true,
+      "action_name": "MyIngress.set_expected_stimuli",
+      "action_params": {
+        "expected_stimuli": 9671406554665233583964160
+      }
+    },
+    {
+      "table": "MyIngress.tab_agg_func",
+      "default_action": true,
+      "action_name": "MyIngress.set_agg_func",
+      "action_params": {
+        "agg_func": 6
+      }
+    },
+    {
+      "table": "MyIngress.tab_activation_func",
+      "default_action": true,
+      "action_name": "MyIngress.set_activation_func",
+      "action_params": {
+        "activation_func": 2
+      }
+    },
+    {
+      "table": "MyIngress.tab_neuron_bias_2_neurons",
+      "default_action": true,
+      "action_name": "MyIngress.set_neuron_bias_2_neurons",
+      "action_params": {
+        "neuron_1_bias": 4,
+        "neuron_2_bias": 65532
+      }
+    },
+    {
+      "table": "MyIngress.tab_n2n_weight_32_to_2_neurons",
+      "match": {
+        "hdr.ann.neuron_id": 51
+      },
+      "action_name": "MyIngress.set_n2n_weight_32_to_2_neurons",
+      "action_params": {
+        "n2n_1_weight_1": 65312,
+        "n2n_1_weight_2": 65378,
+        "n2n_1_weight_3": 206,
+        "n2n_1_weight_4": 65389,
+        "n2n_1_weight_5": 65395,
+        "n2n_1_weight_6": 273,
+        "n2n_1_weight_7": 65429,
+        "n2n_1_weight_8": 65312,
+        "n2n_1_weight_9": 255,
+        "n2n_1_weight_10": 172,
+        "n2n_1_weight_11": 65073,
+        "n2n_1_weight_12": 65395,
+        "n2n_1_weight_13": 65429,
+        "n2n_1_weight_14": 65184,
+        "n2n_1_weight_15": 65343,
+        "n2n_1_weight_16": 83,
+        "n2n_1_weight_17": 65194,
+        "n2n_1_weight_18": 17,
+        "n2n_1_weight_19": 199,
+        "n2n_1_weight_20": 19,
+        "n2n_1_weight_21": 65398,
+        "n2n_1_weight_22": 65362,
+        "n2n_1_weight_23": 65390,
+        "n2n_1_weight_24": 176,
+        "n2n_1_weight_25": 242,
+        "n2n_1_weight_26": 65296,
+        "n2n_1_weight_27": 65349,
+        "n2n_1_weight_28": 175,
+        "n2n_1_weight_29": 65269,
+        "n2n_1_weight_30": 357,
+        "n2n_1_weight_31": 65436,
+        "n2n_1_weight_32": 65300,
+        "n2n_2_weight_1": 200,
+        "n2n_2_weight_2": 118,
+        "n2n_2_weight_3": 65328,
+        "n2n_2_weight_4": 119,
+        "n2n_2_weight_5": 145,
+        "n2n_2_weight_6": 65314,
+        "n2n_2_weight_7": 206,
+        "n2n_2_weight_8": 180,
+        "n2n_2_weight_9": 65162,
+        "n2n_2_weight_10": 65332,
+        "n2n_2_weight_11": 430,
+        "n2n_2_weight_12": 141,
+        "n2n_2_weight_13": 192,
+        "n2n_2_weight_14": 199,
+        "n2n_2_weight_15": 192,
+        "n2n_2_weight_16": 65449,
+        "n2n_2_weight_17": 353,
+        "n2n_2_weight_18": 21,
+        "n2n_2_weight_19": 65357,
+        "n2n_2_weight_20": 65432,
+        "n2n_2_weight_21": 69,
+        "n2n_2_weight_22": 53,
+        "n2n_2_weight_23": 174,
+        "n2n_2_weight_24": 65335,
+        "n2n_2_weight_25": 65370,
+        "n2n_2_weight_26": 224,
+        "n2n_2_weight_27": 189,
+        "n2n_2_weight_28": 65427,
+        "n2n_2_weight_29": 379,
+        "n2n_2_weight_30": 65359,
+        "n2n_2_weight_31": 87,
+        "n2n_2_weight_32": 186
+      }
+    },
+    {
+      "table": "MyIngress.ann_forward",
+      "match": {
+        "standard_metadata.ingress_port": 51
+      },
+      "action_name": "MyIngress.mcast",
+      "action_params": {
+        "mgroup": 101
+      }
+    }
+  ],
+  "multicast_group_entries": [
+    {
+      "multicast_group_id": 101,
+      "replicas": [
+        {
+          "egress_port": 126,
+          "instance": 1
+        }
+      ]
+    }
+  ]
+}
