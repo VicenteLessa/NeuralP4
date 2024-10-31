@@ -1,0 +1,1 @@
+{"datetime": "09-09-2024-13-35-43", "training_dataset_shape": "(3550, 27)", "test_dataset_shape": "(500, 27)", "number_of_attributes": 27, "n_epoch": 500, "accuracy_train": 1.0, "train_max": 1.0, "train_min": 1.0, "train_std": 0.0, "accuracy_test": 1.0, "test_max": 1.0, "test_min": 1.0, "test_std": 0.0, "accuracies_train": [1.0], "accuracies_test": [1.0]}
