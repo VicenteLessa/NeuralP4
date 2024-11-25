@@ -1,0 +1,7 @@
+nprintml -L dataset-small/metadata.csv -a pcap \
+--pcap-dir dataset-small/ \
+-4 -t -u -c 10 \
+-x "ipv4_src.*|ipv4_dst.*" \
+--save-features-format csv \
+--limit 900 \
+-V > exec-log-c10.txt
